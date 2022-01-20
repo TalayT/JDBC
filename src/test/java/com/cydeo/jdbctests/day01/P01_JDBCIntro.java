@@ -31,5 +31,8 @@ public class P01_JDBCIntro {
         rs.close();
         statement.close();
         conn.close();
+
+
+
     }
 }
