@@ -57,8 +57,10 @@ public class P02_Flexible_Navigation {
         System.out.println(row);
 
 
-        rs.beforeFirst(); // jump back to starting before first row
+        rs.beforeFirst(); // jump back to table beginning before first row
 
+        // As long, we are at the end of the table (107), to print ALL data from table,
+        // we need to jump back to table beginning using beforeFirst command
         while(rs.next()){
             System.out.println(rs.getString(1) + " " + rs.getString(2) );
         }
