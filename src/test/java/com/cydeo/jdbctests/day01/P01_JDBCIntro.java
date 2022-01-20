@@ -24,8 +24,15 @@ public class P01_JDBCIntro {
          */
 
         while(rs.next()){
-            System.out.println(rs.getInt(1) + "-" + rs.getString(2) +
-                    "-" + rs.getInt(3) + "-" + rs.getInt(4));
+            System.out.println(rs.getInt(1) + "-" + rs.getString(2) + "-" +
+                               rs.getInt(3) + "-" + rs.getInt(4));
+        }
+
+        // we can Add more queries
+        rs = statement.executeQuery("select * from regions");
+        while (rs.next()){
+            System.out.println(rs.getInt(1));
+            System.out.println(rs.getString(2));
         }
 
         rs.close();
