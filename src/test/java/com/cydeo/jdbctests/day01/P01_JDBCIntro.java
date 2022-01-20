@@ -19,7 +19,14 @@ public class P01_JDBCIntro {
 
         ResultSet rs = statement.executeQuery("select * from departments where manager_id is not null");
 
+        /*
+        10- Administration - 200 -1700
+         */
 
+        while(rs.next()){
+            System.out.println(rs.getInt(1) + "-" + rs.getString(2) +
+                    "-" + rs.getInt(3) + "-" + rs.getInt(4));
+        }
 
         rs.close();
         statement.close();
