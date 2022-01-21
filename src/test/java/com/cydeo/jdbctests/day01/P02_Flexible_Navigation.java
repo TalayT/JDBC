@@ -39,7 +39,7 @@ public class P02_Flexible_Navigation {
         int row = rs.getRow();
         System.out.println(row);// 107
 
-        // jump to row 8
+        // jump exactly to row 8
         rs.absolute(8);
         row = rs.getRow();
         System.out.println(row);// 8
