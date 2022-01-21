@@ -9,5 +9,12 @@
       <jdbc-url>jdbc:oracle:thin:@54.210.59.197:1521:XE</jdbc-url>
       <working-dir>$ProjectFileDir$</working-dir>
     </data-source>
+    <data-source source="LOCAL" name="libraryApp2" uuid="88cd5dac-d3ae-49d6-99c4-4b3f90abcce4">
+      <driver-ref>mysql.8</driver-ref>
+      <synchronize>true</synchronize>
+      <jdbc-driver>com.mysql.cj.jdbc.Driver</jdbc-driver>
+      <jdbc-url>jdbc:mysql://54.157.236.232:3306/library2</jdbc-url>
+      <working-dir>$ProjectFileDir$</working-dir>
+    </data-source>
   </component>
 </project>
